@@ -47,10 +47,10 @@
         <div class="form-group">
           <label for="phone">เบอร์โทรศัพท์</label>
           <input type="text" class="form-control" name="phone" id="phone" placeholder="เบอร์โทรศัพท์" onChange="JavaScript:doCallAjaxPhonBook('phone','station','department');">
-          <p class="help-block">ระบุหมายเลขโทรศัพท์ภายใน 4 หลัก หมายเลขใดหมายเลขหนึ่ง</p>        
+          <p class="help-block"></p>
         </div>
         <div class="form-group">
-          <label for="station">หน่วยงาน</label>
+          <label for="station">สถานที่</label>
           <input type="text" class="form-control" name="station" id="station" placeholder="หน่วยงาน">
         </div>
         <div class="form-group">
@@ -116,8 +116,8 @@
         	var getPhone = "phone_number=" + encodeURI( document.getElementById(phone).value);
         	HttPRequest.open('POST',url,true);
         	HttPRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        	HttPRequest.setRequestHeader("Content-length", getPhone.length);
-        	HttPRequest.setRequestHeader("Connection", "close");
+        	//HttPRequest.setRequestHeader("Content-length", getPhone.length);
+        	//HttPRequest.setRequestHeader("Connection", "close");
         	HttPRequest.send(getPhone);
 
         	HttPRequest.onreadystatechange = function(){ // Return Request
@@ -127,7 +127,7 @@
         	        var data = page.split("|");
         	        document.getElementById(station).value = data[0];
         	        document.getElementById(department).value = data[1];
-        	     }else{ alert('ไม่มีข้อมูลหมายเลขโทรศัพท์ โปรดติดต่อผู้ดูแล'); }
+        	     }//else{ alert('ไม่มีข้อมูลหมายเลขโทรศัพท์ โปรดติดต่อผู้ดูแล'); }
         	  }
         	}
 
