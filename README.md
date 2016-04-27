@@ -1,2 +1,2 @@
 # cradle
-แจ้งซ่อมศูนย์เปล
+QueueCradle
