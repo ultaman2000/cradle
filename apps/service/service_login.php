@@ -1,4 +1,5 @@
 <?php
+session_start();
 echo '<meta charset="utf-8">';
 $username = $_POST['username'];
 //echo $username;

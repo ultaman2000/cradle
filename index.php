@@ -17,7 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="./assets/css/simple-sidebar.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/fonts/css/font-awesome.min.css">
+    <link href="./assets/fonts/css/font-awesome.min.css" rel="stylesheet" >
     <link href="./assets/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="./assets/css/responsive.dataTables.min.css" rel="stylesheet">
     <link href="./assets/css/dataTables.tableTools.css" rel="stylesheet">
@@ -215,7 +215,7 @@
     <script src="./assets/js/jquery.dataTables.min.js"></script>
     <script src="./assets/js/dataTables.responsive.min.js"></script>
     <script src="./assets/js/dataTables.tableTools.js"></script>
-    <script type="text/javascript" src="assets/js/vfunction.js"></script>    
+    <script type="text/javascript" src="assets/js/vfunction.js"></script>
     <!--script src="./assets/ajax/service_processing.php"></script-->
     <!--script src="./assets/js/bootstrap-table.js"></script-->
     <!--script src="./assets/js/bootstrap-table-key-events.js"></script-->
