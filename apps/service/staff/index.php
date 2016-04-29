@@ -33,7 +33,7 @@ session_start();
       include '../../config/connectdb.php';
       //$sql='select * from service where user_name ="$username" and flag="1"';
       //$sql="select * from service where user_name ='$username' and flag =1 ";
-      $sql="select * from service where staff_name ='ศูนย์เปล' or staff_name = '$staffname' and flag =1 ";
+      $sql="select * from service where (staff_name ='ศูนย์เปล' or staff_name = '$staffname') and flag = 1 ";
       $result = mysqli_query($con, $sql);
       //start test
       if (!$result) {
@@ -52,9 +52,9 @@ session_start();
         <td><?php echo $row['user_name']; ?></td>
         <td><?php echo $row['staff_name']; ?></td>
         <td><?php echo $row['id']; ?></td>
-        <td><a href="staff_update.php?id=<?php echo $row['id'];?> & status=รับเรื่อง">รับเรื่อง</a></td>
-        <td><a href="staff_update.php?id=<?php echo $row['id'];?> & status=เรียบร้อย">เรียบร้อย</a></td>
-        <td><a href="staff_update.php?id=<?php echo $row['id'];?> & status=รอดำเนินการ">ยกเลิก</a></td>
+        <td><a href="staff_update.php?id=<?php echo $row['id'];?>&status=รับเรื่อง">รับเรื่อง</a></td>
+        <td><a href="staff_update.php?id=<?php echo $row['id'];?>&status=เรียบร้อย">เรียบร้อย</a></td>
+        <td><a href="staff_update.php?id=<?php echo $row['id'];?>&status=รอดำเนินการ">ยกเลิก</a></td>
       </tr>
       <?php
       }
